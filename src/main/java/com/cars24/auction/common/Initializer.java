@@ -25,7 +25,7 @@ public class Initializer implements CommandLineRunner {
         Auction a = new Auction.Builder().setItemCode("BMW7").setBasePrice(1000).setStatus(ApplicationConstants.RUNNING).setUser(userList).setStepRate(0).build();
 
         auctionRepository.save(a);
-        Auction a1 = auctionRepository.fetchAuction("BMW7");
+        Auction a1 = auctionRepository.fetchAuctionByItemCode("BMW7");
         user = new User.Builder().setUserName("user2").setBidAmount(1400).build();
         a1.getUser().add(user);
 
@@ -41,7 +41,7 @@ public class Initializer implements CommandLineRunner {
 
         auctionRepository.save(a1);
 
-        a1 = auctionRepository.fetchAuction("BMW8");
+        a1 = auctionRepository.fetchAuctionByItemCode("BMW8");
         user = new User.Builder().setUserName("user2").setBidAmount(5400).build();
         a1.getUser().add(user);
 
@@ -57,7 +57,7 @@ public class Initializer implements CommandLineRunner {
 
         auctionRepository.save(a1);
 
-        a1 = auctionRepository.fetchAuction("BMW1");
+        a1 = auctionRepository.fetchAuctionByItemCode("BMW1");
         user = new User.Builder().setUserName("nirai").setBidAmount(5400).build();
         a1.getUser().add(user);
 

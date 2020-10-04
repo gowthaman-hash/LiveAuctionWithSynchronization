@@ -38,13 +38,13 @@ public class AuctionService {
     }
 
     public Auction findByItemCode(String itemCode) {
-        return auctionRepository.fetchAuction(itemCode);
+        return auctionRepository.fetchAuctionByItemCode(itemCode);
     }
 
     public String postBid(String itemCode, int bid) {
         String response = ApplicationConstants.NOT_FOUND;
         try {
-            Auction auction = auctionRepository.fetchAuction(itemCode);
+            Auction auction = auctionRepository.fetchAuctionByItemCode(itemCode);
 
             if (auction != null) {
                 SingletonClass lock = SingletonClass.getInstance();
