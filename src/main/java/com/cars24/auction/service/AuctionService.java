@@ -29,7 +29,7 @@ public class AuctionService {
     }
 
     public List<RunningAuction> fetchRunningAuctions(String status, String page, String size) {
-        Pageable pageable = PageRequest.of(Integer.valueOf(page), Integer.valueOf(size), Sort.by(Sort.Order.asc("item_code")));
+        Pageable pageable =  PageRequest.of(Integer.valueOf(page), Integer.valueOf(size), Sort.by(Sort.Order.asc("item_code")));;
         return auctionRepository.fetchRunningAuctions(status, pageable);
     }
 
@@ -104,7 +104,6 @@ public class AuctionService {
 
     private String getLoggedInUserName() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
         return auth.getName();
     }
 }

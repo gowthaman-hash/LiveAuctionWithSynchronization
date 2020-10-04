@@ -32,8 +32,9 @@ public class AuctionController {
     }
 
     @GetMapping
+    @ResponseBody
     public List<RunningAuction> fetchRunningAuctions(@RequestParam("status") String status, @RequestParam(defaultValue = "0") String page, @RequestParam(defaultValue = "4") String size) {
-        return auctionService.fetchRunningAuctions(status,page,size);
+        return auctionService.fetchRunningAuctions(status, page, size);
     }
 
     @PostMapping("/{itemCode}/bid")

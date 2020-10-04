@@ -16,7 +16,7 @@ public class User {
     String userName;
     @ManyToOne
     Auction auction;
-     @Column(name = "bid_amount")
+    @Column(name = "bid_amount")
     int bidAmount;
 
     public int getId() {
@@ -34,19 +34,22 @@ public class User {
     public void setUserName(String userName) {
         this.userName = userName;
     }
- public int getBidAmount() {
+
+    public int getBidAmount() {
         return bidAmount;
     }
 
     public void setBidAmount(int bidAmount) {
         this.bidAmount = bidAmount;
     }
+
     public static class Builder {
         String userName;
 
 
- int bidAmount;
-  public Builder setBidAmount(int bidAmount) {
+        int bidAmount;
+
+        public Builder setBidAmount(int bidAmount) {
             this.bidAmount = bidAmount;
             return this;
         }
@@ -56,9 +59,9 @@ public class User {
             return this;
         }
 
-        public User build(){
-            User user=new User();
-user.setBidAmount(bidAmount);
+        public User build() {
+            User user = new User();
+            user.setBidAmount(bidAmount);
             user.setUserName(userName);
             return user;
         }
