@@ -18,7 +18,7 @@ Dependency:
 	
 Documentation for end user:
 
-  There are 2 APIs and it is deployed in Deployed in AWS.
+  There are 2 APIs and it is deployed in AWS.
   
   
   
