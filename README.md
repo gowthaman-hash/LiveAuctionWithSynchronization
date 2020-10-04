@@ -19,20 +19,20 @@ Dependency:
 Documentation for end user:
   There are 2 APIs and it is deployed in Deployed in AWS.
     1) HTTP Method: GET-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction-0.0.1-SNAPSHOT/auction?status=RUNNING
-					   Authorization: Not required. 
-					   For localhost: http://localhost:8080/auction?status=RUNNING
-					   Optional parameters usage 1: page=0&size=4(if total values count is 4)
-									Desc: Retreives 4 values(max) from initial page.
-					   Optional parameters usage 2: page=2&size=2(if total values are 4 then for each page 2 will get displayed)
-									Desc: Retreives 4 values(max) from initial page.	
-                       Sort by : Itemcode.									
+	   Authorization: Not required. 
+	   For localhost: http://localhost:8080/auction?status=RUNNING
+	   Optional parameters usage 1: page=0&size=4(if total values count is 4)
+					Desc: Retreives 4 values(max) from initial page.
+	   Optional parameters usage 2: page=2&size=2(if total values are 4 then for each page 2 will get displayed)
+					Desc: Retreives 4 values(max) from initial page.	
+           Sort by : Itemcode.									
 	
     2) HTTP Method: POST-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction-0.0.1-SNAPSHOT/auction/BMW8/bid
-					  Authorization: Basic Auth. sample users: user1,user2,user3,user4. password: password
-					  For localhost: http://localhost:8080/auction/BMW1/bid
-					        Param Desc: BMW1-->Itemcode. Can be retreived by running GET API.
-										Req Body: {"bidAmount":1000}
-										 Note: Amount should be greater or equal to last/maxbid/base price.
+	  Authorization: Basic Auth. sample users: user1,user2,user3,user4. password: password
+	  For localhost: http://localhost:8080/auction/BMW1/bid
+		Param Desc: BMW1-->Itemcode. Can be retreived by running GET API.
+		Req Body: {"bidAmount":1000}
+		Note: Amount should be greater or equal to last/maxbid/base price.
 
 Build and deployment:
       To test as standalone: Navigate to parent dir of Auction proj and run 'mvn spring-boot:run'
