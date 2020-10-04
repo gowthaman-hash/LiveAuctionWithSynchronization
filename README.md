@@ -25,7 +25,7 @@ Documentation for end user:
     1) HTTP Method: GET-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction/auction?status=RUNNING
 	   Authorization: Not required. 
 	   For localhost: http://localhost:8080/auction?status=RUNNING 
-	   Default: it retreives only 4 if no parameters specified:
+	   Default: it retreives only 4 values if no parameters specified:
 	   Optional parameters usage 1: page=0&size=4(if total values count is 4)
 					Desc: Retreives 4 values(max) from initial page.
 	   Optional parameters usage 2: page=2&size=2(if total values are 4 then for each page 2 will get displayed)
