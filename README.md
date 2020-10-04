@@ -17,7 +17,7 @@ Dependency:
     usage: particularly to mock user to run secured REST service. Tag Ref: WithMockUser
 	
 Documentation for end user:
-
+  As Onboarding users and entering items for auctions are ot of scope. Have loaded those values.
   There are 2 APIs and it is deployed in AWS.
   
   
