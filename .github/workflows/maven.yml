@@ -23,4 +23,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: tomcat deploy
-      run: curl -v -u admin:admin -T  /home/runner/work/RESTAppln/RESTAppln/target/Auction.war  'http://http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080//manager/text/deploy?path=/'
+      run: curl -v -u admin:admin -T  /home/runner/work/RESTAppln/RESTAppln/target/Auction.war  'http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080//manager/text/deploy?path=/'
