@@ -22,7 +22,7 @@ Documentation for end user:
   
   
   
-    1) HTTP Method: GET-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction-0.0.1-SNAPSHOT/auction?status=RUNNING
+    1) HTTP Method: GET-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction/auction?status=RUNNING
 	   Authorization: Not required. 
 	   For localhost: http://localhost:8080/auction?status=RUNNING
 	   Optional parameters usage 1: page=0&size=4(if total values count is 4)
@@ -31,7 +31,7 @@ Documentation for end user:
 					Desc: Retreives 4 values(max) from initial page.	
            Sort by : Itemcode.									
 	
-    2) HTTP Method: POST-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction-0.0.1-SNAPSHOT/auction/BMW8/bid
+    2) HTTP Method: POST-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction/auction/BMW8/bid
 	  Authorization: Basic Auth. sample users: user1,user2,user3,user4. password: password
 	  For localhost: http://localhost:8080/auction/BMW1/bid
 		Param Desc: BMW1-->Itemcode. Can be retreived by running GET API.
@@ -40,5 +40,5 @@ Documentation for end user:
 
 Build and deployment:
       To test as standalone: Navigate to parent dir of Auction proj and run 'mvn spring-boot:run'
-                      Desc: As it is developed in spring boot, tomcat comes by default. WAR file will get deployed by default. Localhost URL mentioned in documentation section.
+        Desc: As it is developed in spring boot, tomcat comes by default. WAR file will get deployed by default. Localhost URL mentioned in documentation section.
       To deploy in AWS EC2 tomcat: Have written yaml script as Actions. Whenever commit happens in GIT, it will build and deploy in tomcat server. Actual URL mentioned in documentation section.
