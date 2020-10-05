@@ -1,4 +1,4 @@
-# RESTAppln
+# Auction
 Techstack: SpringBoot,Junit 4,5 Mockito,H2 Database.
     Spring    : Basically to avoid boiler plate code like resolving dependencies on the go. Handling transactions by default. 
 	SpringBoot: No need to have separate dependency like Spring,hibernate,Junit, Mockito etc..
