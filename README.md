@@ -27,7 +27,7 @@ Documentation for end user:
 	   Default: it retreives only 4 values if no parameters specified:
 	   Optional parameters usage 1: page=0&size=4(if total values count is 4)
 					Desc: Retreives 4 values(max) from initial page.
-	   Optional parameters usage 2: page=2&size=2(if total values are 4 then for each page 2 will get displayed)
+	   Optional parameters usage 2: page=1&size=2(if total values are 4 then for each page 2 will get displayed)
 					Desc: Retreives 4 values(max) from initial page.	
            Sort by : Itemcode.									
 	
