@@ -17,11 +17,10 @@ Dependency:
     usage: particularly to mock user to run secured REST service. Tag Ref: WithMockUser
 	
 Documentation for end user:
-  As Onboarding users and entering items for auctions are ot of scope. Have loaded those values.
-  There are 2 APIs and it is deployed in AWS.
+  As Onboarding users and entering items for auctions are out of scope. Have loaded those values.
+  There are 2 APIs and it is deployed in AWS. Bonus API auction/all, to retreive all auctions irrespective of status
   
-  
-  
+   
     1) HTTP Method: GET-->http://ec2-3-133-95-7.us-east-2.compute.amazonaws.com:8080/Auction/auction?status=RUNNING
 	   Authorization: Not required. 
 	   For localhost: http://localhost:8080/auction?status=RUNNING 
